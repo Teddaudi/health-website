@@ -8,10 +8,10 @@ const Navbar = () => {
         setToggleNavbar((prev) => !prev)
     }
     return (
-        <nav id="header" className="fixed w-full z-10 top-0 text-white ">
+        <nav id="header" className="fixed w-full z-10 top-0">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <div className="pl-4 flex items-center">
-                    <Link className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                    <Link className="toggleColour text no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
                         <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
                             <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
                             <path
