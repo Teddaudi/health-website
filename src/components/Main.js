@@ -1,8 +1,8 @@
 export default function Main() {
     return (
-        <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <section className="text-gray-600 body-font " style={{backgroundColor:'#fffeeb'}}>
+            <div className="container px-5 py-20 mx-auto">
+                <div className="flex flex-wrap w-full mb-5 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
                         Why Us?
                     </h1>
@@ -10,109 +10,59 @@ export default function Main() {
 
                     </p>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    className="w-6 h-6"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                Shooting Stars
-                            </h2>
-                            <p className="leading-relaxed text-base">
-                                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                                poke farm.
+                <div class="grid-cols-1 sm:grid md:grid-cols-3 mx-auto">
+                    <div style={{backgroundColor:'#d3d3d3'}}
+                        class="mx-6 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
+                        <a href="#!">
+                            <img
+                                class="rounded-t-lg"
+                                src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
+                                alt="Hollywood Sign on The Hill" />
+                        </a>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <p class="mb-4 text-base">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
                             </p>
                         </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    className="w-6 h-6"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <circle cx="6" cy="6" r="3"></circle>
-                                    <circle cx="6" cy="18" r="3"></circle>
-                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                The Catalyzer
-                            </h2>
-                            <p className="leading-relaxed text-base">
-                                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                                poke farm.
+
+                    <div style={{backgroundColor:'#d3d3d3'}}
+                        class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
+                        <a href="#!">
+                            <img
+                                class="rounded-t-lg"
+                                src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+                                alt="Palm Springs Road" />
+                        </a>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <p class="mb-4 text-base">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
                             </p>
                         </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    className="w-6 h-6"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <circle cx="6" cy="6" r="3"></circle>
-                                    <circle cx="6" cy="18" r="3"></circle>
-                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                The Catalyzer
-                            </h2>
-                            <p className="leading-relaxed text-base">
-                                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                                poke farm.
+                    <div style={{backgroundColor:'#d3d3d3'}}
+                        class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
+                        <a href="#!">
+                            <img
+                                class="rounded-t-lg"
+                                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+                                alt="Los Angeles Skyscrapers" />
+                        </a>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <p class="mb-4 text-base">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
                             </p>
                         </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                    <div className="border border-gray-200 p-6 rounded-lg">
-                        <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                            <svg
-                                fill="none"
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                className="w-6 h-6"
-                                viewBox="0 0 24 24"
-                            >
-                                <circle cx="6" cy="6" r="3"></circle>
-                                <circle cx="6" cy="18" r="3"></circle>
-                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                            </svg>
-                        </div>
-                        <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                            The Catalyzer
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                            Fingerstache flexitarian street art 8-bit waist co, subway tile
-                            poke farm.
-                        </p>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>

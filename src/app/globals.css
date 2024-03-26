@@ -8,5 +8,8 @@ body, *{
 
 }
 ::-webkit-scrollbar{
-    width: 0px !important;
+    width: 10px !important;
 }
+.gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  }
