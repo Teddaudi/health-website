@@ -1,47 +1,43 @@
-"use client";
-import { useState } from 'react';
 import { client, urlFor } from '../lib/client';
-import imageUrlBuilder from '@sanity/image-url';
 
+async function getData() {
+    const data = `*[_type == 'banner']{
+        largeTitle,
+          buttonText,
+          image,
+          smallTitle,
+          text
+      }`;
+    const hero = await client.fetch(data)
+    return hero;
+}
 
-
-export default function Hero({ images, events }) {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    // const bannerQuery = '*[_type == "banner"]';
-    // const bannerData = await client.fetch(bannerQuery);
-
-    // const banner = bannerData[0]
-    // const builder = imageUrlBuilder(client);
-    // const imageUrl = builder.image(banner.image.asset).url();
-    const nextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide - 1 + images.length) % images.length);
-    };
+export default async function Hero() {
+    const Hero = await getData();
     return (
         <div>
-            <div class="pt-24 gradient">
-                <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-                    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                        <p class="uppercase tracking-loose w-full">What business are you?</p>
-                        <h1 class="my-4 text-5xl font-bold leading-tight">
-                            Main Hero Message to sell yourself!
-                        </h1>
-                        <p class="leading-normal text-2xl mb-8">
-                            Sub-hero message, not too long and not too short. Make it just right!
-                        </p>
-                        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Read More
-                        </button>
-                    </div>
-                    <div class="w-full md:w-3/5 py-6 text-center">
-                        <img class="w-full md:w-4/5 z-50" src="/hero2.png" />
+            {Hero.map((Hero,id) => (
+                <div className="pt-24 gradient" key={id}>
+                    <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+                        <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+                            <p className="uppercase tracking-loose w-full" key={id}>{Hero.smallTitle}</p>
+                            <h1 className="my-4 text-5xl font-bold leading-tight">
+                                {Hero.largeTitle}
+                            </h1>
+                            <p className="leading-normal text-2xl mb-8">
+                                {Hero.text}
+                            </p>
+                            <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                {Hero.buttonText}
+                            </button>
+                        </div>
+                        <div className="w-full md:w-3/5 py-6 text-center">
+                            <img className="w-full md:w-4/5 z-50" src={urlFor(Hero.image).url()} alt="" />
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            ))}
         </div>
     );
 }

@@ -1,7 +1,27 @@
-export default function Main() {
+import { client, urlFor } from "../lib/client";
+
+async function getData(){
+    const data = `*[_type == 'why']{
+        title2,
+        title3,
+          title1,
+          image3,
+          image2,
+          image1,
+          text3,
+          text2,
+          text1
+      }`;
+    const why = await client.fetch(data);
+    return why;
+}
+export default async function Main() {
+    const whyData = await getData();
+    console.log(whyData, 'why data')
     return (
         <section className="text-gray-600 body-font " style={{ backgroundColor: '#fffeeb' }}>
-            <div className="container px-5 py-10 mx-auto">
+            { whyData.map((why,id)=>(
+                <div className="container px-5 py-10 mx-auto">
                 <div className="flex flex-wrap w-full mb-5 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
                         Why Us?
@@ -16,15 +36,13 @@ export default function Main() {
                         <a href="#!">
                             <img
                                 class="rounded-t-lg"
-                                src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
+                                src={urlFor(why.image1).url()}
                                 alt="Hollywood Sign on The Hill" />
                         </a>
                         <div class="p-6">
-                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <h5 class="mb-2 text-xl font-medium leading-tight">{why.title1}</h5>
                             <p class="mb-4 text-base">
-                                This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
+                               {why.text1}
                             </p>
                         </div>
                     </div>
@@ -34,15 +52,13 @@ export default function Main() {
                         <a href="#!">
                             <img
                                 class="rounded-t-lg"
-                                src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+                                src={urlFor(why.image2).url()}
                                 alt="Palm Springs Road" />
                         </a>
                         <div class="p-6">
-                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <h5 class="mb-2 text-xl font-medium leading-tight">{why.title2}</h5>
                             <p class="mb-4 text-base">
-                                This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
+                                {why.text2}
                             </p>
                         </div>
                     </div>
@@ -51,20 +67,19 @@ export default function Main() {
                         <a href="#!">
                             <img
                                 class="rounded-t-lg"
-                                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+                                src={urlFor(why.image3).url()}
                                 alt="Los Angeles Skyscrapers" />
                         </a>
                         <div class="p-6">
-                            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+                            <h5 class="mb-2 text-xl font-medium leading-tight">{why.title3}</h5>
                             <p class="mb-4 text-base">
-                                This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
+                                {why.text3}
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            ))}
         </section>
     )
 }
