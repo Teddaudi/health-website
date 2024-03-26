@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <section class="bg-white dark:bg-gray-900 " style={{backgroundColor:'#fffeeb'}}>
+        <section class="bg-white dark:bg-gray-900 mt-4" style={{backgroundColor:'#fffeeb'}}>
             <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                 <img class="w-full dark:hidden" src="hero2.png" alt="dashboard image" />
                 <img class="w-full hidden dark:block" src="hero.jpg" alt="dashboard image" />

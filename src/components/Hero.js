@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { client } from '../lib/client';
+import { client, urlFor } from '../lib/client';
 import imageUrlBuilder from '@sanity/image-url';
 
 
@@ -41,7 +41,7 @@ export default function Hero({ images, events }) {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     );
 }

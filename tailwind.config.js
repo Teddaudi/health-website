@@ -9,7 +9,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [
-    require("flowbite/plugin")
+    require("flowbite/plugin"), require("@tailwindcss/typography"),
   ],
   theme: {
     extend: {
