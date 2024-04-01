@@ -13,3 +13,18 @@ body, *{
 .gradient {
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
   }
+  .blue{
+    background-color: #0b32ba;
+  }
+  .blue-text{
+    color: #0b32ba;
+  }
+  .green{
+    background-color: #98c879;
+  }
+  .green-text{
+    color: #98c879;
+  }
+  li{
+    color: white;
+  }
