@@ -15,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Navbar />
-        <main className="">
-          {children}
-        </main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow mt-4">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
