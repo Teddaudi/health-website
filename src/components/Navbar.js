@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav id="header" className="fixed w-full z-10 top-0 text-white green">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between ">
                 <div className="pl-2 flex items-center">
-                    <Link className="toggleColour no-underline hover:no-underline font-semibold text-2xl " href="/">
+                    <Link className="toggleColour no-underline hover:no-underline font-bold text-lg " href="/">
                         <img src='/logo.png' alt='logo' className="h-20 fill-current inline pr-0 -mr-4" />
                         TODO HEALTHCARE
                     </Link>
