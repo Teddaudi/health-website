@@ -10,13 +10,13 @@ const Navbar = () => {
     return (
         <nav id="header" className="fixed w-full z-10 top-0 text-white green">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between ">
-                <div className="pl-4 flex items-center">
+                <div className="pl-2 flex items-center">
                     <Link className="toggleColour no-underline hover:no-underline font-semibold text-2xl " href="/">
                         <img src='/logo.png' alt='logo' className="h-20 fill-current inline" />
                         TODO HEALTHCARE
                     </Link>
                 </div>
-                <div className="block lg:hidden pr-4">
+                <div className="block lg:hidden mr-4">
                     <button onClick={handleToggleNavbarClick} id="nav-toggle" className="flex items-center p-1 text-gray-400 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>
