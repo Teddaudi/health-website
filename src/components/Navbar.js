@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between ">
                 <div className="pl-2 flex items-center">
                     <Link className="toggleColour no-underline hover:no-underline font-semibold text-2xl " href="/">
-                        <img src='/logo.png' alt='logo' className="h-20 fill-current inline" />
+                        <img src='/logo.png' alt='logo' className="h-20 fill-current inline pr-0 -mr-4" />
                         TODO HEALTHCARE
                     </Link>
                 </div>
