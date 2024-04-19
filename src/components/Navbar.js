@@ -8,7 +8,7 @@ const Navbar = () => {
         setToggleNavbar((prev) => !prev)
     }
     return (
-        <nav id="header" className="fixed w-full z-10 top-0 text-white green">
+        <nav id="header" className="fixed w-full z-10 top-0 text-white white green-text">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between ">
                 <div className="pl-2 flex items-center">
                     <Link className="toggleColour no-underline hover:no-underline font-bold text-lg " href="/">
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Link href={'/appointments'}>
                         <button
                             id="navAction"
-                            className="mx-auto lg:mx-0 hover:bg-green-400 hover:text-white bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                            className="mx-auto lg:mx-0 hover:bg-white hover:text-gray-800 green text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                         >
                             Book an Appointment
                         </button>
