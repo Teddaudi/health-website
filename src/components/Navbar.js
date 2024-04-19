@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="pl-2 flex items-center">
                     <Link className="toggleColour no-underline hover:no-underline font-bold text-lg " href="/">
                         <img src='/logo.png' alt='logo' className="h-20 fill-current inline pr-0 -mr-4" />
-                        TODO HEALTHCARE
+                        TUDO HEALTHCARE
                     </Link>
                 </div>
                 <div className="block lg:hidden mr-4">
