@@ -8,7 +8,7 @@ const Navbar = () => {
         setToggleNavbar((prev) => !prev)
     }
     return (
-        <nav id="header" className="fixed w-full z-10 top-0  white green-text">
+        <nav id="header" className="fixed w-full z-10 top-0  text-white green-text ">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between ">
                 <div className="pl-2 flex items-center">
                     <Link className="toggleColour no-underline hover:no-underline font-bold text-lg " href="/">

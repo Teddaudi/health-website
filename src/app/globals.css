@@ -19,18 +19,15 @@ body, *{
   .blue-text{
     color: #0b32ba;
   }
+  .green-text{
+    background-color: #98c879;
+  }
   .green{
     background-color: #98c879;
   }
-  .green-text{
-    color: #7dd957;
-  }
-  .green-text{
-    color: #98c879;
+  .toggleColour{
+    color:#ffff;
   }
   li{
-    color: white;
-  }
-  .white{
-    background-color: #fffeeb;
+    color: #ffff;
   }
