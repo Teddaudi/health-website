@@ -28,6 +28,6 @@ body, *{
   .toggleColour{
     color:#ffff;
   }
-  li{
+  #nav-toggle, li{
     color: #ffff;
   }
