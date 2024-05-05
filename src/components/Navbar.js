@@ -8,7 +8,7 @@ const Navbar = () => {
         setToggleNavbar((prev) => !prev)
     }
     return (
-        <nav id="header" className="fixed w-full z-10 top-0 text-white white green-text">
+        <nav id="header" className="fixed w-full z-10 top-0  white green-text">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between ">
                 <div className="pl-2 flex items-center">
                     <Link className="toggleColour no-underline hover:no-underline font-bold text-lg " href="/">
@@ -25,26 +25,26 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className={toggleNavbar ?
-                    "w-full flex-grow lg:flex lg:items-center lg:w-auto  mt-2 lg:mt-0 green lg:bg-transparent text-white p-4 lg:p-0 z-20" :
+                    "w-full flex-grow lg:flex lg:items-center lg:w-auto  mt-2 lg:mt-0 green lg:bg-transparent p-4 lg:p-0 z-20" :
                     "w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 green lg:bg-transparent text-black p-4 lg:p-0 z-20"} id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         <li className="mr-3">
-                            <Link className="inline-block py-2 px-4 text-white font-bold text-lg hover:text-red-800 no-underline" href="/">Home</Link>
+                            <Link className="inline-block py-2 px-4 font-bold text-lg hover:text-red-800 no-underline" href="/">Home</Link>
                         </li>
                         <li className="mr-3">
-                            <Link className="inline-block text-white no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/what-we-do">What We Do</Link>
+                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/what-we-do">What We Do</Link>
                         </li>
                         <li className="mr-3">
-                            <Link className="inline-block text-white no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/about-us">About Us</Link>
+                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/about-us">About Us</Link>
                         </li>
                         <li className="mr-3">
-                            <Link className="inline-block text-white no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/contact-us">Contact Us</Link>
+                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/contact-us">Contact Us</Link>
                         </li>
                     </ul>
                     <Link href={'/appointments'}>
                         <button
                             id="navAction"
-                            className="mx-auto lg:mx-0 hover:bg-white hover:text-gray-800 green text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                            className="mx-auto lg:mx-0 hover:bg-white hover:text-gray-800 green font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                         >
                             Book an Appointment
                         </button>
