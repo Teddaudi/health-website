@@ -32,10 +32,10 @@ const Navbar = () => {
                             <Link className="inline-block py-2 px-4 font-bold text-lg hover:text-red-800 no-underline" href="/">Home</Link>
                         </li>
                         <li className="mr-3">
-                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/what-we-do">What We Do</Link>
+                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/about-us">About Us</Link>
                         </li>
                         <li className="mr-3">
-                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/about-us">About Us</Link>
+                            <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/what-we-do">What We Do</Link>
                         </li>
                         <li className="mr-3">
                             <Link className="inline-block no-underline font-bold text-lg hover:text-red-800 hover:text-underline py-2 px-4" href="/contact-us">Contact Us</Link>
